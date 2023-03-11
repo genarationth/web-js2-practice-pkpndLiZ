@@ -11,10 +11,10 @@
 
 //Challenge 2: Create an information card
 
-let personInformation = {
-    name: "Pk",
-    location: "Bangkok",
-    hobby: "cooking"
-};
-
-console.log(`Hi, my name is ${personInformation.name}. I live in ${personInformation.location} and enjoy ${personInformation.hobby}.`)
+function getUserInformation() {
+    let name = document.getElementById("name").value;
+    let location = document.getElementById("location").value;
+    let hobby = document.getElementById("hobby").value;
+    let displayInfo = document.getElementById("displayInfo").innerHTML = `Hi, my name is ${name}. I live in ${location} and enjoy ${hobby}.`;
+    console.log(`Hi, my name is ${name}. I live in ${location} and enjoy ${hobby}.`);
+ }

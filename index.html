@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information Card</title>
+    <script src="script.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 30%;
+        border-style: solid;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+      }
+
+      .inputForm {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        gap: 3px;
+        padding-bottom: 30px;
+      }
+
+      h2 {
+        color: blue;
+        text-align: center;
+      }
+
+      .submit {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        width: 50%;
+      }
+
+      .displayInform {
+        width: 30%;
+        border-style: solid;
+        border-radius: 20px;
+      }
+
+      .displayInform h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>User Information</h2>
+      <div class="inputForm">
+        <label for="name"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="name"
+          id="name"
+          required
+        />
+        <label for="location"><b>Location</b></label>
+        <input
+          type="text"
+          placeholder="Enter your location"
+          name="location"
+          id="location"
+          required
+        />
+        <label for="hobby"><b>Hobby</b></label>
+        <input
+          type="text"
+          placeholder="Enter your hobby"
+          name="hobby"
+          id="hobby"
+          required
+        />
+      </div>
+      <div class="submit">
+        <button type="button" onclick="getUserInformation();">Submit</button>
+      </div>
+    </div>
+    <div class="displayInform">
+      <h2 id="displayInfo">User information is here.</h2>
+    </div>
+  </body>
+</html>
